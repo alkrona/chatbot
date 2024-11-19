@@ -3,8 +3,8 @@ import streamlit as st
 import pandas as pd
 import requests
 from call_api import send_api_request
-st.write("# Chat with NSW Property Data ")
-df = pd.read_csv("/Users/bijubiju/Desktop/ml projects/current/property_sales/data/database_files/post_2021_property_data.csv")
+st.write("# Chat with Production Data ")
+df = pd.read_csv("data/suppliers.csv")
 with st.expander(" Dataframe Preview"):
     st.write(df.head(5))
 query = st.text_area("Chat with Dataframe")
