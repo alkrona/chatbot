@@ -1,7 +1,7 @@
 import requests
 
 def send_api_request(query):
-    url = f"http://209.38.83.187/sent_query/{query}"
+    url = f"http://209.38.89.247/sent_query/{query}"
     response = requests.post(url)
 
     if response.status_code == 200:

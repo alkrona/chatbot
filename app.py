@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import requests
 from call_api import send_api_request
-st.write("# Chat with Production Data ")
+st.write("# Chat with Property_data Data ")
 df = pd.read_csv("data/suppliers.csv")
 with st.expander(" Dataframe Preview"):
     st.write(df.head(5))
